@@ -26,7 +26,7 @@ app.use(methodOverride(function(req, res){
   }
 }));
 
-//app.use(routes);
+app.use(routes);
 app.use(expressLayouts);
 app.use(express.static(__dirname + "/public"));
 
