@@ -11,7 +11,10 @@ var personSchema = new mongoose.Schema({
   linkedin:   String,
   twitter:    String,
   role:       String,
-  projects:  [projectSchema]
+  projects:  [{
+              type: mongoose.Schema.ObjectId,
+              ref: 'Project'
+              }]
 });
 
 module.exports = mongoose.model('Person', personSchema);
