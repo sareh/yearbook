@@ -1,6 +1,6 @@
 var mongoose = require('mongoose');
 
-var projectSchema = require('./project');
+// var projectSchema = require('./project');
 
 var personSchema = new mongoose.Schema({
   first_name: String,
