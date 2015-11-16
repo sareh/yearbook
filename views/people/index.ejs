@@ -1,0 +1,19 @@
+<div class="container">
+  <div class="row">
+    <h1>People</h1>
+
+    <% people.forEach(function(person){ %>
+      <ul>
+        <li><%= person.first_name %></li>
+        <li><%= person.last_name %></li>
+        <li><%= person.nickname %></li>
+        <li><%= person.photo %></li>
+        <li><img src="assets/images/GitHub-Mark-120px-plus.png"><a href="<%= person.github %>">Github</a></li>
+        <li><a href="<%= person.linkedin %>">LinkedIn</a></li>
+        <li><a href="<%= person.twitter %>">Twitter</a></li>
+        <li><%= person.role %></li>
+        <li><%= person.projects %></li>
+      </ul>
+    <% }) %>
+  </div>
+</div>
