@@ -5,10 +5,6 @@ var projectSchema = new mongoose.Schema({
   github:     String,
   heroku:     String,
   screenshot: String,
-  // creators:  [{
-  //             type: mongoose.Schema.ObjectId,
-  //             ref: 'Person'
-  //             }],
   tags:      [{
               type: mongoose.Schema.ObjectId,
               ref: 'Tag'
