@@ -69,7 +69,7 @@ projects.forEach(function(project, index){
   project.save(saveItemToDb);
 });
 
-var sareh = {
+var sareh = new Person({
     first_name: "Sareh",
     last_name: "Heidari",
     nickname: "",
@@ -79,9 +79,9 @@ var sareh = {
     twitter: "https://www.twitter.com/sareh88",
     type: "student",
     projects: [pasur, portal]
-  };
+  });
 
-var marty = {
+var marty = new Person({
     first_name: "Marty",
     last_name: "Gormley",
     nickname: "",
@@ -91,7 +91,7 @@ var marty = {
     twitter: "https://www.twitter.com/martygormley",
     type: "student",
     projects: [lemonade, screencap]
-  };
+  });
 
 var people = [sareh, marty];
 
